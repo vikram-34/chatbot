@@ -1,4 +1,4 @@
-# Gemini Chatbot
+# Python Chatbot
 
 A Python chatbot built on the layered architecture from the diagram:
 Client Layer → API Gateway → Core Services → AI Components → LLM Provider / Storage.
