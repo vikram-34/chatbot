@@ -34,7 +34,6 @@ chatbot/
    ```
 
 2. Get a Gemini API key from https://aistudio.google.com/apikey
-AQ.Ab8RN6KKbwiei7Nl4h1SC1lp1GtGmnrrVoma9op-FfZT0qQScQ
 
 3. Copy the env template and fill in your key:
    ```bash
