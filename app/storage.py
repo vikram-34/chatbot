@@ -1,11 +1,3 @@
-"""
-Storage Layer
--------------
-In the architecture diagram this box is Redis (sessions) + PostgreSQL (users/messages)
-+ ChromaDB (vector/RAG) + File/S3 (logs). For a single-process chatbot, SQLite covers
-sessions + message history in one file, with the same read/write interface. Swap this
-module out for real Postgres/Redis clients later without touching any other layer.
-"""
 import sqlite3
 import time
 import os
