@@ -1,10 +1,3 @@
-"""
-Conversation Orchestrator (Core Services box)
------------------------------------------------
-The single place that wires together: Rate Limiter & Guardrails -> Context
-Manager (load history) -> LLM Provider (generate) -> Context Manager
-(persist history). Mirrors the "Chat Request" path in the diagram.
-"""
 from app import context_manager, guardrails
 from app.llm_provider import get_llm_provider
 
