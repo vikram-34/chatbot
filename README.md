@@ -1,6 +1,6 @@
 # Python Chatbot
 
-A Python chatbot built on the layered architecture from the diagram:
+A Python chatbot built on the layered architecture:
 Client Layer → API Gateway → Core Services → AI Components → LLM Provider / Storage.
 
 Only **Gemini** is wired up as the LLM (OpenAI/Ollama/Claude branches from the
@@ -90,7 +90,5 @@ curl -X POST http://127.0.0.1:8000/chat \
   moderation API call for production use.
 - **Rate limiting**: currently in-memory per-process; move to Redis if you scale to
   multiple workers/instances.
-- **Vector search / RAG**: not implemented (the diagram's ChromaDB box). Add a
-  `retrieve()` step in `orchestrator.py` before the LLM call if you need it.
 - **Multiple LLM providers**: implement another `LLMProvider` subclass in
   `llm_provider.py` and swap what `get_llm_provider()` returns.
